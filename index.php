@@ -1,3 +1,25 @@
+<!-- --
+-- Table structure for table `admins`
+--
+
+CREATE TABLE `admins` (
+  `admin_id` int(11) NOT NULL,
+  `admin_name` varchar(255) NOT NULL,
+  `admin_email` varchar(255) NOT NULL,
+  `admin_password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+-- -------------------------------------------------------- --
+
+INSERT INTO `admins` (`admin_name`, `admin_email`, `admin_password`) 
+VALUES ('George Moore', 'effangsdave@mail.com', MD5('Dav12345')) 
+
+-- -------------------------------------------------------  -->
+
+
+
+
+
 <?php
 // Start the session
 session_start();
